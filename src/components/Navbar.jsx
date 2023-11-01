@@ -42,7 +42,7 @@ const Navbar = () => {
     <div
       className={`bg-${
         scrolled ? "white" : "transparent"
-      }fixed flex flex-row min-w-full max-w-[100vw] z-50 text-[1.1rem] md:min-h-[5rem] min-h-[3.5rem] md:text-lg md:flex md:flex-row justify-between items-center md:px-[15rem] px-[1.5rem] shadow-sm`}
+      } fixed top-0 left-0 flex flex-row min-w-full max-w-[100vw] z-50 text-[1.1rem] md:min-h-[5rem] min-h-[3.5rem] md:text-lg justify-between items-center md:px-[15rem] px-[1.5rem] shadow-sm`}
     >
       <motion.div
         className="flex flex-row space-x-6"
