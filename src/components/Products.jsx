@@ -43,7 +43,7 @@ const Products = () => {
               cult.sport Ranger XR 1.43&quot;
               <span className="block text-center text-pink-300">$1500</span>
             </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.1rem] left-[4.8rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
+            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.8rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
               <AiOutlineShopping />
             </div>
           </div>
@@ -57,7 +57,7 @@ const Products = () => {
               Noise Force Rugged & Sporty
               <span className="block text-center text-pink-300">$500</span>
             </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.1rem] left-[4.8rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
+            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.8rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
               <AiOutlineShopping />
             </div>
           </div>
@@ -71,7 +71,7 @@ const Products = () => {
               Fire-Boltt Phoenix
               <span className="block text-center text-pink-300">$1900</span>
             </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.1rem] left-[4.8rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
+            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[1.4rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
               <AiOutlineShopping />
             </div>
           </div>
@@ -85,7 +85,7 @@ const Products = () => {
               Fire-Boltt Quest
               <span className="block text-center text-pink-300">$700</span>
             </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.1rem] left-[4.8rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
+            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[1.4rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
               <AiOutlineShopping />
             </div>
           </div>
@@ -99,7 +99,7 @@ const Products = () => {
               Amazfit GTR 3 Pro
               <span className="block text-center text-pink-300">$1700</span>
             </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.1rem] left-[4.8rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
+            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[1.4rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
               <AiOutlineShopping />
             </div>
           </div>
