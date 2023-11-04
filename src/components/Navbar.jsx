@@ -138,10 +138,7 @@ const Navbar = () => {
               </div>
             </>
           ) : (
-            <LuMenu
-              onClick={toggleMenu}
-              className="transition-all duration-500"
-            />
+            <LuMenu onClick={toggleMenu} />
           )}
         </div>
       </div>

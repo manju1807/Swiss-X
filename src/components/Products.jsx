@@ -1,6 +1,6 @@
-import { AiOutlineShopping } from "react-icons/ai";
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import ProductCard from "./ProductCard";
 const Products = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -10,6 +10,35 @@ const Products = () => {
       mainControls.start("visible");
     }
   }, [isInView, mainControls]);
+
+  const productData = [
+    {
+      src: "https://m.media-amazon.com/images/I/61iADen7HML._SL1500_.jpg",
+      title: "Cult sport Ranger XR",
+      price: "$1500",
+    },
+    {
+      src: "https://m.media-amazon.com/images/I/71FD+ohfJvL._SL1500_.jpg",
+      title: "Noise Force Rugged & Sporty",
+      price: "$500",
+    },
+    {
+      src: "https://m.media-amazon.com/images/I/61y2VVWcGBL._SL1500_.jpg",
+      title: "Fire-Boltt Phoenix",
+      price: "$1900",
+    },
+    {
+      src: "https://m.media-amazon.com/images/I/61-u85Od5TL._SL1500_.jpg",
+      title: "Fire-Boltt Quest",
+      price: "$700",
+    },
+    {
+      src: "https://m.media-amazon.com/images/I/61LeyQw4qbL._SL1500_.jpg",
+      title: "Amazfit GTR 3 Pro",
+      price: "$1700",
+    },
+  ];
+
   return (
     <section
       className="min-h-screen max-w-screen min-w-full overflow-auto"
@@ -33,76 +62,14 @@ const Products = () => {
           Products
         </h1>
         <div className="w-full md:px-[10rem] md:gap-12 p-6 grid gap-8 grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 max-h-[100vh]">
-          <div className="relative border-gray-200 border shadow-xl hover:shadow-2xl  flex flex-col items-center justify-center p-5">
-            <img
-              src="https://m.media-amazon.com/images/I/61iADen7HML._SL1500_.jpg"
-              alt="Featured img-1"
-              className="w-[80%] rotate-6 lg:object-contain sm:object-none py-6"
+          {productData.map((product, index) => (
+            <ProductCard
+              key={index}
+              src={product.src}
+              title={product.title}
+              price={product.price}
             />
-            <h1 className="text-sm font-semibold">
-              cult.sport Ranger XR 1.43&quot;
-              <span className="block text-center text-pink-300">$1500</span>
-            </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.8rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
-              <AiOutlineShopping />
-            </div>
-          </div>
-          <div className="relative border-gray-200 border shadow-xl hover:shadow-2xl  flex flex-col items-center justify-center p-5">
-            <img
-              src="https://m.media-amazon.com/images/I/71FD+ohfJvL._SL1500_.jpg"
-              alt="Featured img-1"
-              className="w-[80%] rotate-6 lg:object-contain sm:object-none py-6"
-            />
-            <h1 className="text-sm font-semibold">
-              Noise Force Rugged & Sporty
-              <span className="block text-center text-pink-300">$500</span>
-            </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[0.8rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
-              <AiOutlineShopping />
-            </div>
-          </div>
-          <div className="relative border-gray-200 border shadow-xl hover:shadow-2xl  flex flex-col items-center justify-center p-5">
-            <img
-              src="https://m.media-amazon.com/images/I/61y2VVWcGBL._SL1500_.jpg"
-              alt="Featured img-1"
-              className="w-[80%] rotate-6 lg:object-contain sm:object-none py-6"
-            />
-            <h1 className="text-sm font-semibold">
-              Fire-Boltt Phoenix
-              <span className="block text-center text-pink-300">$1900</span>
-            </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[1.4rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
-              <AiOutlineShopping />
-            </div>
-          </div>
-          <div className="relative border-gray-200 border shadow-xl hover:shadow-2xl  flex flex-col items-center justify-center p-5">
-            <img
-              src="https://m.media-amazon.com/images/I/61-u85Od5TL._SL1500_.jpg"
-              alt="Featured img-1"
-              className="w-[80%] rotate-6 lg:object-contain sm:object-none py-6"
-            />
-            <h1 className="text-sm font-semibold">
-              Fire-Boltt Quest
-              <span className="block text-center text-pink-300">$700</span>
-            </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[1.4rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
-              <AiOutlineShopping />
-            </div>
-          </div>
-          <div className="relative border-gray-200 border shadow-xl hover:shadow-2xl  flex flex-col items-center justify-center p-5">
-            <img
-              src="https://m.media-amazon.com/images/I/61LeyQw4qbL._SL1500_.jpg"
-              alt="Featured img-1"
-              className="w-[80%] rotate-6 lg:object-contain sm:object-none py-6"
-            />
-            <h1 className="text-sm font-semibold">
-              Amazfit GTR 3 Pro
-              <span className="block text-center text-pink-300">$1700</span>
-            </h1>
-            <div className="bg-gray-700 py-2 px-[0.40rem] relative top-[1.4rem] left-[4.3rem] md:top-[1.3rem] md:left-[6.4rem] text-white">
-              <AiOutlineShopping />
-            </div>
-          </div>
+          ))}
         </div>
       </motion.div>
     </section>
